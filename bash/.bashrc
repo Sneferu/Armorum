@@ -10,6 +10,10 @@ export EDITOR=vim
 # Set default file creation as rwxr-xr-x
 umask 022
 
+# Allow globs to pick up hidden files (aside from . and ..)
+shopt -u dotglob
+export GLOBIGNORE=".:.."
+
 # Aliases #####################################################################
 
 # If not running interactively, don't do anything
