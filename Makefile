@@ -16,3 +16,7 @@ install:
 	cp tmux/.tmux.conf ${HOME}/
 	mkdir -p ${HOME}/.config/fish
 	cp -r fish/* ${HOME}/.config/fish/
+	# Install these individually as there's no guarantee glob will pick
+	# them up
+	cp -r bash/.bashrc ${HOME}/
+	cp -r bash/.bash_profile ${HOME}/
