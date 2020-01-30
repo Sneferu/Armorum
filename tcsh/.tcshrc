@@ -1,0 +1,21 @@
+# tcsh configuration file
+# Armorum is designed for integration with bash, tcsh, or fish. This file
+# provides convenient aliases and the shell prompt.
+
+# Environment #################################################################
+
+# Set editor to vim
+setenv EDITOR vim
+
+# Set default file creation as rwxr-xr-x
+umask 022
+
+# Aliases #####################################################################
+
+# if we're not running interactively, don't do anything
+if ($?prompt == 0) exit
+
+alias ll "ls -la"
+
+# Set prompt
+set prompt = "%m:%~> "
