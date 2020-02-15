@@ -27,14 +27,28 @@ set tabstop=4
 set softtabstop=4
 set expandtab
 
-" Search and highlight constantly
+" Search and highlight constantly, following smart case rules
 set incsearch
 set hlsearch
+set smartcase
 
 " Fold everything on indents
 set foldlevelstart=1
 set foldmethod=indent
 
+" Wrap text
+set wrap
+
+" Show tabs, trailing spaces, and non-standard whitespace as characters
+set listchars=tab:>\ ,trail:*,nbsp:~
+set list
+
+" Show mode and most recent command on the modeline
+set showmode
+set showcmd
+
+" Ignore file modelines in favor of the vimrc
+set nomodeline
 
 " Control ---------------------------------------------------------------------
 
@@ -48,7 +62,18 @@ set backspace=indent,eol,start
 " Show menu for autocompleting files
 set wildmenu
 
+" Set fastscrolling with a 5 line offset
+set ttyfast
+set scrolloff=5
+
+" Set autoindent shift distance
+set shiftwidth=4
+set noshiftround
+
 " Style -----------------------------------------------------------------------
 
 " Use commonly available colorscheme
 colorscheme desert
+
+" Adjust other colors to suit
+highlight ColorColumn ctermbg=236
