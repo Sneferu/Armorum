@@ -12,8 +12,10 @@ umask 022
 
 # Aliases #####################################################################
 
-# if we're not running interactively, don't do anything
-if ($?prompt == 0) exit
+# If we're not running interactively, don't do anything
+if ($?prompt == 0) then
+    exit
+endif
 
 alias ll "ls -la"
 
