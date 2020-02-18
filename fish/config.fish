@@ -20,8 +20,3 @@ abbr --add ga git add
 abbr --add gc git commit
 abbr --add gb git branch
 abbr --add gco git checkout
-
-# Catch frequent mistakes
-abbr --add sl 'printf "This is a command line, not a railway station!\n" ; ls'
-abbr --add dc 'printf "This is a command line, not a political joke!\n" ; cd'
-abbr --add gti 'printf "This is a command line, not a dealership!\n" ; git'
