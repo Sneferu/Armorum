@@ -5,6 +5,9 @@
 # Search command
 abbr --add s grep -ir
 
+# Human readable list command
+abbr --add lh ll -h
+
 # Print hex, decimal, unsigned
 abbr --add 0x printf %x
 abbr --add 0d printf %d
