@@ -26,3 +26,6 @@ alias ll='ls -la'
 # Set up default prompt (some information here is also provided in the tmux
 # status bar, but it's useful for SSH sessions anyway)
 PS1='[\u@\h \W]\$ '
+
+# Unless fish is explicitly disabled, drop into it
+if [ -z "$NO_FISH" ]; then fish; fi
