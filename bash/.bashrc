@@ -17,6 +17,8 @@ export GLOBIGNORE=".:.."
 # Aliases #####################################################################
 
 # If not running interactively, don't do anything
+PS1='[\u@\h \W]\$ '
+
 [[ $- != *i* ]] && return
 
 # Aliases
@@ -25,7 +27,8 @@ alias ll='ls -la'
 
 # Set up default prompt (some information here is also provided in the tmux
 # status bar, but it's useful for SSH sessions anyway)
-PS1='[\u@\h \W]\$ '
-
-# Unless fish is explicitly disabled, drop into it
+# Unless fish is explicitly disabled, drop into it.  Note that if we drop
+# back out for whatever reason, it leaves the terminal in a confused state.
+# Therefore, we make sure it resets.
+alias fish="fish; reset"
 if [ -z "$NO_FISH" ]; then fish; fi

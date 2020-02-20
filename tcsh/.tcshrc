@@ -22,7 +22,9 @@ alias ll "ls -la"
 # Set prompt
 set prompt = "%m:%~> "
 
-# If fish is not explicitly disabled, drop into it
+# If fish is not explicitly disabled, drop into it.  See the bashrc for
+# explanation of the preceding alias.
+alias fish "fish; reset"
 if (! $?NO_FISH) then
     fish
 endif
