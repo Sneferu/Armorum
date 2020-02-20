@@ -23,3 +23,10 @@ abbr --add ga git add
 abbr --add gc git commit
 abbr --add gb git branch
 abbr --add gco git checkout
+
+# Key Bindings ----------------------------------------------------------------
+
+# Convenient auto-suggestion navigation
+bind --user \cr forward-word
+bind --user \cd forward-bigword
+
