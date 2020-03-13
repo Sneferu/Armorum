@@ -9,13 +9,13 @@ abbr --add s grep -ir
 abbr --add lh ll -h
 
 # Print hex, decimal, unsigned
-abbr --add 0x printf %x
-abbr --add 0d printf %d
-abbr --add 0u printf %u
+abbr --add %x print_math %x
+abbr --add %d print_math %d
+abbr --add %u print_math %u
 
 # Print exponent/ floating point
-abbr --add 0e printf %e
-abbr --add 0f printf %f
+abbr --add %e print_math %e
+abbr --add %f print_math %f
 
 # Git commands
 abbr --add gl git log
