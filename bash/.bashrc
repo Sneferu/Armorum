@@ -7,6 +7,9 @@
 # Set editor to vim
 export EDITOR=vim
 
+# Set path to include less-standard directories
+export PATH=$PATH:$HOME/bin:$HOME/.local/bin
+
 # Set default file creation as rwxr-xr-x
 umask 022
 

@@ -30,3 +30,5 @@ abbr --add gco git checkout
 bind --user \cr forward-word
 bind --user \cd forward-bigword
 
+# Path ------------------------------------------------------------------------
+set -x PATH $PATH $HOME/bin $HOME/.local/bin

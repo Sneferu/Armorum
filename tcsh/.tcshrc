@@ -7,6 +7,9 @@
 # Set editor to vim
 setenv EDITOR vim
 
+# Include less-standard bins in path
+setenv PATH $PATH\:$HOME/bin\:$HOME/.local/bin
+
 # Set default file creation as rwxr-xr-x
 umask 022
 
