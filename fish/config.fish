@@ -32,3 +32,4 @@ bind --user \cd forward-bigword
 
 # Path ------------------------------------------------------------------------
 set -x PATH $PATH $HOME/bin $HOME/.local/bin
+set -x EDITOR vim
